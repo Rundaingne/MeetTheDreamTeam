@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class Person: Codable {
+class Person {
     
     var name: String
     var age: Int
@@ -27,8 +27,6 @@ class Person: Codable {
 
 extension Person: Equatable {
     static func == (lhs: Person, rhs: Person) -> Bool {
-        <#code#>
+        return lhs.name == rhs.name && lhs.age == rhs.age && lhs.bio == rhs.bio && lhs.profilePic == rhs.profilePic
     }
-    
-
 }

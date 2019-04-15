@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EA6414D226506CE0019232A /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA6414C226506CE0019232A /* PersonController.swift */; };
+		2EA6414F226509290019232A /* PersonCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA6414E226509290019232A /* PersonCollectionViewController.swift */; };
+		2EA6415122650B480019232A /* PersonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA6415022650B470019232A /* PersonCollectionViewCell.swift */; };
+		2EA641532265123F0019232A /* PersonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA641522265123F0019232A /* PersonTableViewController.swift */; };
+		2EA641552265125B0019232A /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA641542265125B0019232A /* PersonTableViewCell.swift */; };
 		F75DDDDD2264FFDA007EACA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75DDDDC2264FFDA007EACA2 /* AppDelegate.swift */; };
 		F75DDDE22264FFDA007EACA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F75DDDE02264FFDA007EACA2 /* Main.storyboard */; };
 		F75DDDE42264FFDF007EACA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F75DDDE32264FFDF007EACA2 /* Assets.xcassets */; };
@@ -15,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2EA6414C226506CE0019232A /* PersonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonController.swift; path = "Model Controller/PersonController.swift"; sourceTree = SOURCE_ROOT; };
+		2EA6414E226509290019232A /* PersonCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCollectionViewController.swift; sourceTree = "<group>"; };
+		2EA6415022650B470019232A /* PersonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCollectionViewCell.swift; sourceTree = "<group>"; };
+		2EA641522265123F0019232A /* PersonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewController.swift; sourceTree = "<group>"; };
+		2EA641542265125B0019232A /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
 		F75DDDD92264FFDA007EACA2 /* MeetTheDreamTeam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetTheDreamTeam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F75DDDDC2264FFDA007EACA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F75DDDE12264FFDA007EACA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,6 +68,10 @@
 				F75DDDF022650015007EACA2 /* Models */,
 				F75DDDEF2265000B007EACA2 /* Storyboards */,
 				F75DDDEE2264FFFD007EACA2 /* Resources */,
+				2EA6414E226509290019232A /* PersonCollectionViewController.swift */,
+				2EA6415022650B470019232A /* PersonCollectionViewCell.swift */,
+				2EA641522265123F0019232A /* PersonTableViewController.swift */,
+				2EA641542265125B0019232A /* PersonTableViewCell.swift */,
 			);
 			path = MeetTheDreamTeam;
 			sourceTree = "<group>";
@@ -100,6 +114,7 @@
 		F75DDDF22265001C007EACA2 /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2EA6414C226506CE0019232A /* PersonController.swift */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -176,7 +191,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F75DDDF422650254007EACA2 /* Person.swift in Sources */,
+				2EA6414F226509290019232A /* PersonCollectionViewController.swift in Sources */,
+				2EA641532265123F0019232A /* PersonTableViewController.swift in Sources */,
+				2EA6414D226506CE0019232A /* PersonController.swift in Sources */,
 				F75DDDDD2264FFDA007EACA2 /* AppDelegate.swift in Sources */,
+				2EA641552265125B0019232A /* PersonTableViewCell.swift in Sources */,
+				2EA6415122650B480019232A /* PersonCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +345,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q89A379BUF;
 				INFOPLIST_FILE = "$(SRCROOT)/MeetTheDreamTeam/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -343,6 +364,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q89A379BUF;
 				INFOPLIST_FILE = "$(SRCROOT)/MeetTheDreamTeam/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
