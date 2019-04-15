@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F75DDDDD2264FFDA007EACA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75DDDDC2264FFDA007EACA2 /* AppDelegate.swift */; };
-		F75DDDDF2264FFDA007EACA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75DDDDE2264FFDA007EACA2 /* ViewController.swift */; };
 		F75DDDE22264FFDA007EACA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F75DDDE02264FFDA007EACA2 /* Main.storyboard */; };
 		F75DDDE42264FFDF007EACA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F75DDDE32264FFDF007EACA2 /* Assets.xcassets */; };
 		F75DDDE72264FFDF007EACA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F75DDDE52264FFDF007EACA2 /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		F75DDDD92264FFDA007EACA2 /* MeetTheDreamTeam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetTheDreamTeam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F75DDDDC2264FFDA007EACA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F75DDDDE2264FFDA007EACA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F75DDDE12264FFDA007EACA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F75DDDE32264FFDF007EACA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F75DDDE62264FFDF007EACA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +52,53 @@
 		F75DDDDB2264FFDA007EACA2 /* MeetTheDreamTeam */ = {
 			isa = PBXGroup;
 			children = (
+				F75DDDF122650019007EACA2 /* View Controllers */,
+				F75DDDF022650015007EACA2 /* Models */,
+				F75DDDEF2265000B007EACA2 /* Storyboards */,
+				F75DDDEE2264FFFD007EACA2 /* Resources */,
+			);
+			path = MeetTheDreamTeam;
+			sourceTree = "<group>";
+		};
+		F75DDDEE2264FFFD007EACA2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				F75DDDDC2264FFDA007EACA2 /* AppDelegate.swift */,
-				F75DDDDE2264FFDA007EACA2 /* ViewController.swift */,
-				F75DDDE02264FFDA007EACA2 /* Main.storyboard */,
 				F75DDDE32264FFDF007EACA2 /* Assets.xcassets */,
 				F75DDDE52264FFDF007EACA2 /* LaunchScreen.storyboard */,
 				F75DDDE82264FFDF007EACA2 /* Info.plist */,
 			);
-			path = MeetTheDreamTeam;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F75DDDEF2265000B007EACA2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F75DDDE02264FFDA007EACA2 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F75DDDF022650015007EACA2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F75DDDF122650019007EACA2 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F75DDDF22265001C007EACA2 /* Model Controller */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F75DDDF22265001C007EACA2 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +172,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F75DDDDF2264FFDA007EACA2 /* ViewController.swift in Sources */,
 				F75DDDDD2264FFDA007EACA2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +320,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q89A379BUF;
-				INFOPLIST_FILE = MeetTheDreamTeam/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MeetTheDreamTeam/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q89A379BUF;
-				INFOPLIST_FILE = MeetTheDreamTeam/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MeetTheDreamTeam/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
