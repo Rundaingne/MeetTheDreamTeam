@@ -9,7 +9,20 @@
 import UIKit
 
 class PersonTableViewCell: UITableViewCell {
-
     
+    //MARK: -IBOutlets
+    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var personNameLabel: UILabel!
 
+    var person: Person? {
+        didSet {
+            updateViews()
+        }
+    }
+    
+    func updateViews() {
+        profileImageView.image = person?.profilePic
+        personNameLabel.text = person?.name
+    }
+    
 }

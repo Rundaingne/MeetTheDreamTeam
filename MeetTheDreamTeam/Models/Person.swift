@@ -15,12 +15,14 @@ class Person {
     var age: Int
     var bio: String
     var profilePic: UIImage
+    var location: String
     
-    init(name: String, age: Int, bio: String, profilePic: UIImage) {
+    init(name: String, age: Int, bio: String, profilePic: UIImage, location: String) {
         self.name = name
         self.age = age
         self.bio = bio
         self.profilePic = profilePic
+        self.location = location
     }
     
 }
